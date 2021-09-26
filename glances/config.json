@@ -40,6 +40,16 @@
       "database": "glances",
       "prefix": "localhost",
       "interval": 60
+    },
+    "influxdb2": {
+      "enabled": false,
+      "host": "a0d7b954-influxdb",
+      "port": 8086,
+      "token": "",
+      "org": "",
+      "bucket": "glances",
+      "prefix": "localhost",
+      "interval": 60
     }
   },
   "schema": {
@@ -56,6 +66,17 @@
       "username": "str",
       "password": "password",
       "database": "str",
+      "prefix": "str",
+      "interval": "int",
+      "ssl": "bool?"
+    },
+    "influxdb2": {
+      "enabled": "bool",
+      "host": "str",
+      "port": "port",
+      "token": "str",
+      "org": "str",
+      "bucket": "str",
       "prefix": "str",
       "interval": "int",
       "ssl": "bool?"
